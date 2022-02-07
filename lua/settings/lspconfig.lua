@@ -43,13 +43,32 @@ nvim_lsp.gopls.setup({
 })
 
 
--- typescript lsp setting
-nvim_lsp.tsserver.setup({
+-- angular lsp setting
+require'lspconfig'.angularls.setup{
     on_attach = function(_, bufnr)
         local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
         require('keybinding').maplsp(buf_set_keymap)
     end,
     capabilities = capabilities,
 
-})
+}
+
+-- php lsp setting
+require'lspconfig'.intelephense.setup{
+    on_attach = function(_, bufnr)
+        local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+        require('keybinding').maplsp(buf_set_keymap)
+    end,
+    capabilities = capabilities,
+}
+
+-- typescript lsp setting
+--nvim_lsp.tsserver.setup({
+    --on_attach = function(_, bufnr)
+        --local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+        --require('keybinding').maplsp(buf_set_keymap)
+    --end,
+    --capabilities = capabilities,
+
+--})
 
