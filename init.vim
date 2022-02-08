@@ -19,7 +19,10 @@ lua require('settings/treesitter')
 lua require('settings/telescope')
 
 lua require('settings/autocomplete')
+
 lua require('settings/lspconfig')
+
+lua require('settings/git')
 
 lua require('nvim-autopairs').setup{}
 
