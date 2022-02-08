@@ -39,11 +39,11 @@ map("n", "s=", "<C-w>=", opt)
 map("n", "sj", ":resize +10<CR>", opt)
 map("n", "sk", ":resize -10<CR>", opt)
 
--- alt + hjkl  窗口之间跳转
-map("n", "<Shift-h>", "<C-w>h", opt)
-map("n", "<Shift-j>", "<C-w>j", opt)
-map("n", "<Shift-k>", "<C-w>k", opt)
-map("n", "<Shift-l>", "<C-w>l", opt)
+-- Shift + hjkl  窗口之间跳转
+map("n", "<S-h>", "<C-w>h", opt)
+map("n", "<S-j>", "<C-w>j", opt)
+map("n", "<S-k>", "<C-w>k", opt)
+map("n", "<S-l>", "<C-w>l", opt)
 
 --------------------------------------------------------------------
 -- 插件快捷键
@@ -51,20 +51,18 @@ map("n", "<Shift-l>", "<C-w>l", opt)
 map('n', '<leader>b', ':NvimTreeToggle<CR>', opt)
 
 -- bufferline 左右Tab切换
-map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<TAB>", ":BufferLineCycleNext<CR>", opt)
-map("n", "<C-w>", ":bd<CR>", opt)
+map("n", "<leader>x", ":bd<CR>", opt)
 
 -- nvim-treesitter 代码格式化
 map("n", "<leader>i", "gg=G", opt)
 
 -- Telescope
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
---map("n", "<leader>f", ":Telescope find_files<CR>", opt)
 map("n", "<leader>g", ":Telescope live_grep<CR>", opt)
 map("n", "<leader>t", ":Telescope buffers<CR>", opt)
-map("n", "<leader>o", ":Telescope lsp_document_symbols<CR>", opt)
+map("n", "<Space>o", ":Telescope lsp_document_symbols<CR>", opt)
 
 
 local pluginKeys = {}
