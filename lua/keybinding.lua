@@ -51,8 +51,10 @@ map("n", "<S-l>", "<C-w>l", opt)
 map('n', '<leader>b', ':NvimTreeToggle<CR>', opt)
 
 -- bufferline 左右Tab切换
-map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<TAB>", ":BufferLineCycleNext<CR>", opt)
+--map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opt)
+--map("n", "<TAB>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<S-TAB>", ":bprevious<CR>", opt)
+map("n", "<TAB>", ":bnext<CR>", opt)
 map("n", "<leader>x", ":bd<CR>", opt)
 
 -- nvim-treesitter 代码格式化
