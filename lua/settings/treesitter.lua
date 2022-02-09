@@ -18,8 +18,9 @@ require'nvim-treesitter.configs'.setup {
     }
   },
   -- 启用基于Treesitter的代码格式化(=) . NOTE: This is an experimental feature.
+  -- 设置为关闭，否则golang缩进某些情况会有问题
   indent = {
-    enable = true
+    enable = false 
   }
 }
 

@@ -1,7 +1,5 @@
 lua require('common')
 
-set completeopt=menu,menuone,noselect
-
 lua require('plugins')
 
 lua require('keybinding')

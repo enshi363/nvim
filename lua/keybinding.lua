@@ -40,10 +40,10 @@ map("n", "sj", ":resize +10<CR>", opt)
 map("n", "sk", ":resize -10<CR>", opt)
 
 -- Shift + hjkl  窗口之间跳转
-map("n", "<S-h>", "<C-w>h", opt)
-map("n", "<S-j>", "<C-w>j", opt)
-map("n", "<S-k>", "<C-w>k", opt)
-map("n", "<S-l>", "<C-w>l", opt)
+map("n", "<leader>h", "<C-w>h", opt)
+map("n", "<leader>j", "<C-w>j", opt)
+map("n", "<leader>k", "<C-w>k", opt)
+map("n", "<leader>l", "<C-w>l", opt)
 
 --------------------------------------------------------------------
 -- 插件快捷键
