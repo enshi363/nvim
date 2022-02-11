@@ -22,9 +22,11 @@ lua require('settings/lspconfig')
 
 lua require('settings/git')
 
+lua require('settings/toggleterm')
+
 lua require('nvim-autopairs').setup{}
 
 
 set background=dark
 
-colorscheme nord 
+"colorscheme nord 

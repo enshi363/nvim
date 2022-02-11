@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
       },
       -- tag = 'release' -- To use the latest release
   }
+  use {"akinsho/toggleterm.nvim"}
 
   -------------------------- lsp -------------------------------------------
 

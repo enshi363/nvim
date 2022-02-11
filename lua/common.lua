@@ -1,3 +1,8 @@
+vim.g.nord_contrast = true
+-- set transparent background
+vim.g.nord_disable_background = true 
+-- theme
+vim.cmd[[colorscheme nord]]
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
