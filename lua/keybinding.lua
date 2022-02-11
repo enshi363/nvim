@@ -23,8 +23,8 @@ map("v", "<", "<gv", opt)
 map("v", ">", ">gv", opt)
 
 -- magic search
-map("n", "/", "/\\v", { noremap = true , silent = false})
-map("v", "/", "/\\v", { noremap = true , silent = false})
+--map("n", "/", "/\\v", { noremap = true , silent = false})
+--map("v", "/", "/\\v", { noremap = true , silent = false})
 
 ------------------------------------------------------------------
 -- 关闭当前
@@ -62,7 +62,7 @@ map("n", "<leader>i", "gg=G", opt)
 
 -- Telescope
 map("n", "<C-p>", ":Telescope find_files find_command=rg,--hidden,--files prompt_prefix=🔍<CR>", opt)
-map("n", "<leader>g", ":Telescope live_grep<CR>", opt)
+map("n", "\\", ":Telescope live_grep<CR>", opt)
 map("n", "<leader>t", ":Telescope buffers<CR>", opt)
 map("n", "<Space>o", ":Telescope lsp_document_symbols<CR>", opt)
 

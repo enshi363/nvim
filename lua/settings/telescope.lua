@@ -9,7 +9,6 @@ require('telescope').setup{
       previewer = false,
     },
     live_grep = {
-      theme = "dropdown",
       previewer = false,
     }
   },
