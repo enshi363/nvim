@@ -48,7 +48,7 @@ map("n", "<leader>l", "<C-w>l", opt)
 --------------------------------------------------------------------
 -- 插件快捷键
 -- nvimTree
-map('n', '<leader>b', ':NvimTreeToggle<CR>', opt)
+map('n', '<C-k><C-o>', ':NvimTreeToggle<CR>', opt)
 
 -- bufferline 左右Tab切换
 --map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opt)
@@ -73,14 +73,24 @@ local pluginKeys = {}
 pluginKeys.comment = {
   -- normal 模式
   toggler = {
-    line = '<leader>ci',
-    block = '<leader>cb',
+    line = '<leader>cc',
+    block = '<leader>bc',
   },
   -- visual 模式
   opleader = {
     -- ctrl + /
-    line = '<leader>ci',
-    block = '<leader>cb',
+    line = '<leader>c',
+    block = '<leader>b',
+  },
+  ---LHS of extra mappings
+  ---@type table
+  extra = {
+    ---Add comment on the line above
+    above = '<leader>cO',
+    ---Add comment on the line below
+    below = '<leader>co',
+    ---Add comment at the end of line
+    eol = '<leader>cA',
   },
 }
 
