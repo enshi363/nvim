@@ -73,13 +73,13 @@ local pluginKeys = {}
 pluginKeys.comment = {
   -- normal 模式
   toggler = {
-    line = '<C-_>',
+    line = '<leader>ci',
     block = '<leader>cb',
   },
   -- visual 模式
   opleader = {
     -- ctrl + /
-    line = '<C-_>',
+    line = '<leader>ci',
     block = '<leader>cb',
   },
 }
