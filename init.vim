@@ -24,6 +24,8 @@ lua require('settings/git')
 
 lua require('settings/toggleterm')
 
+"lua require('settings/null')
+
 lua require('nvim-autopairs').setup{}
 
 

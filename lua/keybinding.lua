@@ -33,17 +33,17 @@ map("n", "sx", "<C-w>c", opt)
 map("n", "so", "<C-w>o", opt) -- close others
 
 -- 比例控制
-map("n", "s.", ":vertical resize +20<CR>", opt)
-map("n", "s,", ":vertical resize -20<CR>", opt)
-map("n", "s=", "<C-w>=", opt)
-map("n", "sj", ":resize +10<CR>", opt)
-map("n", "sk", ":resize -10<CR>", opt)
+map("n", "RL", ":vertical resize +20<CR>", opt)
+map("n", "RH,", ":vertical resize -20<CR>", opt)
+map("n", "RR", "<C-w>=", opt)
+map("n", "RJ", ":resize +10<CR>", opt)
+map("n", "RK", ":resize -10<CR>", opt)
 
--- Shift + hjkl  窗口之间跳转
-map("n", "<leader>h", "<C-w>h", opt)
-map("n", "<leader>j", "<C-w>j", opt)
-map("n", "<leader>k", "<C-w>k", opt)
-map("n", "<leader>l", "<C-w>l", opt)
+-- G + hjkl  窗口之间跳转
+map("n", "GH", "<C-w>h", opt)
+map("n", "GJ", "<C-w>j", opt)
+map("n", "GK", "<C-w>k", opt)
+map("n", "GL", "<C-w>l", opt)
 
 --------------------------------------------------------------------
 -- 插件快捷键
@@ -73,14 +73,13 @@ local pluginKeys = {}
 pluginKeys.comment = {
   -- normal 模式
   toggler = {
-    line = '<leader>cc',
-    block = '<leader>bc',
+    line = '<C-_>',
   },
   -- visual 模式
   opleader = {
     -- ctrl + /
-    line = '<leader>c',
-    block = '<leader>b',
+    line = '<leader>ci',
+    block = '<leader>cb',
   },
   ---LHS of extra mappings
   ---@type table

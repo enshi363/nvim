@@ -43,11 +43,20 @@ return require('packer').startup(function(use)
   }
   use {"akinsho/toggleterm.nvim"}
 
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup {
+      }
+    end
+  }
+
   -------------------------- lsp -------------------------------------------
 
   -- lspconfig
   use {'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer'}
   use "jose-elias-alvarez/null-ls.nvim"
+  use "jose-elias-alvarez/nvim-lsp-ts-utils"
 
   -- nvim-cmp
   use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
