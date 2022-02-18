@@ -1,11 +1,15 @@
 require('lualine').setup {
     options = {
         icons_enabled = true,
-        theme = 'nord',
-        component_separators = { left = '', right = ''},
-        section_separators = { left = '', right = ''},
+        theme = 'material',
+        -- component_separators = { left = '', right = ''},
+        -- section_separators = { left = '', right = ''},
+        -- component_separators = { left = '', right = ''},
+        -- section_separators = { left = '', right = '' },
+        component_separators = "|",
+        section_separators = { left = '', right = '' },
         disabled_filetypes = {},
-        always_divide_middle = true,
+        -- always_divide_middle = true,
     },
     sections = {
         lualine_a = {'mode'},
@@ -34,6 +38,7 @@ require('lualine').setup {
             }
 
         },
+        lualine_b = {},
         lualine_c = {},
         lualine_x = {},
         lualine_y = {},

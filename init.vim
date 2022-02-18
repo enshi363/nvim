@@ -6,7 +6,7 @@ lua require('keybinding')
 
 lua require('settings/lualine')
 
-"lua require('settings/bufferline')
+" lua require('settings/bufferline')
 
 lua require('settings/ntree')
 

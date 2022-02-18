@@ -13,5 +13,6 @@ require("bufferline").setup{
             }
         },
         show_buffer_close_icons = false,
+        show_tab_indicators = false,
     }
 }
