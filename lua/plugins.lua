@@ -4,6 +4,24 @@ if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
 
+vim.cmd [[packadd packer.nvim]] -- packadd packer module
+
+
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]])
+
+
+-- Use a protected call so we don't error out on first use
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+  return
+end
+
+
 return require('packer').startup(function(use)
   -------------------------- plugins -------------------------------------------
 
@@ -12,14 +30,10 @@ return require('packer').startup(function(use)
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons'
   }
-  -- bufferline
-  -- use {
-  --   'akinsho/bufferline.nvim',
-  --   requires = 'kyazdani42/nvim-web-devicons'
-  -- }
+
   use {
   'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    requires = { 'kyazdani42/nvim-web-devicons' }
   }
   -- treesitter
   use {
@@ -43,18 +57,12 @@ return require('packer').startup(function(use)
   }
   use {"akinsho/toggleterm.nvim"}
 
-  use {
-    "folke/which-key.nvim",
-    config = function()
-      require("which-key").setup {
-      }
-    end
-  }
+  use { "folke/which-key.nvim"}
 
   -------------------------- lsp -------------------------------------------
 
   -- lspconfig
-  use {'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer'}
+  use {'neovim/nvim-lspconfig'}
   use "jose-elias-alvarez/null-ls.nvim"
   use "jose-elias-alvarez/nvim-lsp-ts-utils"
 
@@ -86,4 +94,5 @@ return require('packer').startup(function(use)
   if packer_bootstrap then
     require('packer').sync()
   end
+  require 'bootstrap'
 end)
