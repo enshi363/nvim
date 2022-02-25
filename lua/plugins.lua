@@ -58,6 +58,11 @@ return require('packer').startup(function(use)
   use {"akinsho/toggleterm.nvim"}
 
   use { "folke/which-key.nvim"}
+  -- hop like vim-sneak
+  use {
+    'phaazon/hop.nvim',
+    branch = 'v1', -- optional but strongly recommended
+  }
 
   -------------------------- lsp -------------------------------------------
 

@@ -28,4 +28,6 @@ require('nvim-autopairs').setup{}
 
 require('settings/whichkey')
 
+require('settings/hop')
+
 require('nord').set()
