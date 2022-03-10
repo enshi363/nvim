@@ -1,11 +1,12 @@
 require'nvim-treesitter.configs'.setup {
   -- 安装 language parser
   -- :TSInstallInfo 命令查看支持的语言
-  ensure_installed = {"html", "css", "vim", "lua", "javascript", "typescript", "go","php","bash","json","markdown","rust","yaml","dockerfile"},
+  ensure_installed = {"markdown","html", "css", "vim", "lua", "javascript", "typescript", "go","php","bash","json","rust","yaml","dockerfile"},
   -- 启用代码高亮功能
   highlight = {
     enable = true,
-    additional_vim_regex_highlighting = false
+    disable = {"json"},
+    additional_vim_regex_highlighting = false 
   },
   -- 启用增量选择
   incremental_selection = {

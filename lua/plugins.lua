@@ -64,6 +64,8 @@ return require('packer').startup(function(use)
     branch = 'v1', -- optional but strongly recommended
   }
 
+  use { "aklt/plantuml-syntax" }
+
   -------------------------- lsp -------------------------------------------
 
   -- lspconfig
