@@ -66,6 +66,8 @@ return require('packer').startup(function(use)
 
   use { "aklt/plantuml-syntax" }
 
+  use { "iamcco/markdown-preview.nvim" , run = 'cd app && yarn install' }
+
   -------------------------- lsp -------------------------------------------
 
   -- lspconfig
