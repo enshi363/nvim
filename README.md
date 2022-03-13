@@ -1,6 +1,6 @@
 # Requirement
 
-- brew install rg
+- brew install rg fd
 - brew install fzf 
 - brew tap brew tap homebrew/cask-fonts && brew install --cask font-dejavu-sans-mono-nerd
 

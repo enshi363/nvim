@@ -40,15 +40,15 @@ map("n", "RJ", ":resize +10<CR>", opt)
 map("n", "RK", ":resize -10<CR>", opt)
 
 -- G + hjkl  窗口之间跳转
-map("n", "GH", "<C-w>h", opt)
-map("n", "GJ", "<C-w>j", opt)
-map("n", "GK", "<C-w>k", opt)
-map("n", "GL", "<C-w>l", opt)
+map("n", "sh", "<C-w>h", opt)
+map("n", "sj", "<C-w>j", opt)
+map("n", "sk", "<C-w>k", opt)
+map("n", "sl", "<C-w>l", opt)
 
 --------------------------------------------------------------------
 -- 插件快捷键
 -- nvimTree
-map('n', '<C-k><C-o>', ':NvimTreeToggle<CR>', opt)
+map('n', '<leader>b', ':NvimTreeToggle<CR>', opt)
 
 -- bufferline 左右Tab切换
 --map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opt)
