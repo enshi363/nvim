@@ -162,6 +162,3 @@ nvim_lsp.intelephense.setup{
   }
 }
 
-nvim_lsp.html.setup {
-  capabilities = capabilities,
-}

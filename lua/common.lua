@@ -1,6 +1,6 @@
 vim.g.nord_contrast = true
 -- set transparent background
-vim.g.nord_disable_background = true
+vim.g.nord_disable_background = true 
 -- theme
 -- vim.cmd[[colorscheme nord]]
 -- utf8
@@ -72,9 +72,9 @@ vim.o.splitright = true
 -- 自动补全不自动选中
 vim.g.completeopt = "menu,menuone,noselect,noinsert"
 -- 样式
-vim.o.background = "dark"
-vim.o.termguicolors = true
-vim.opt.termguicolors = true
+--vim.o.background = "dark"
+--vim.o.termguicolors = true
+--vim.opt.termguicolors = true
 -- 不可见字符的显示，这里只把空格显示为一个点
 vim.o.list = false 
 vim.o.listchars = "space:·"

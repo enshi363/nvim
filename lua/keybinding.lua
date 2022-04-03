@@ -40,10 +40,10 @@ map("n", "RJ", ":resize +10<CR>", opt)
 map("n", "RK", ":resize -10<CR>", opt)
 
 -- G + hjkl  窗口之间跳转
-map("n", "sh", "<C-w>h", opt)
-map("n", "sj", "<C-w>j", opt)
-map("n", "sk", "<C-w>k", opt)
-map("n", "sl", "<C-w>l", opt)
+map("n", "<Space>h", "<C-w>h", opt)
+map("n", "<Space>j", "<C-w>j", opt)
+map("n", "<Space>k", "<C-w>k", opt)
+map("n", "<Space>l", "<C-w>l", opt)
 
 --------------------------------------------------------------------
 -- 插件快捷键
