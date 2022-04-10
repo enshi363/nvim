@@ -1,12 +1,32 @@
 require('telescope').setup{
   defaults = {
-    -- ...
     file_ignore_patterns = {"node_modules","dist","vendor",".git"},
+    vimgrep_arguments = {
+      "rg",
+      "--hidden",
+      "--color=never",
+      "--no-heading",
+      "--with-filename",
+      "--line-number",
+      "--column",
+      "--smart-case",
+      "--trim" -- add this value
+    },
+    -- ...
   },
   pickers = {
     find_files = {
       theme = "dropdown",
       previewer = false,
+      find_command = { "fd", 
+        "--type", "file",
+        "--exclude","node_modules/**",
+        "--exclude",".git/**",
+        "--exclude","vendor/**",
+        "--hidden",
+        "--color","never",
+        "--size","-500k",
+      },
     },
     live_grep = {
       previewer = false,

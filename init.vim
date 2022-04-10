@@ -25,6 +25,6 @@ lua require('plugins')
 " lua require('nvim-autopairs').setup{}
 "lua require('settings/null')
 " lua require('settings/bufferline')
-
+"
 set background=dark
 set t_Co=256

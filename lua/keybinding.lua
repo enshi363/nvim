@@ -61,7 +61,8 @@ map("n", "<leader>x", ":bd<CR>", opt)
 map("n", "<leader>i", "gg=G", opt)
 
 -- Telescope
-map("n", "<C-p>", ":Telescope find_files find_command=rg,--hidden,--files <CR>", opt)
+-- map("n", "<C-p>", ":Telescope find_files find_command=rg,--hidden,--files,--ignore<CR>", opt)
+map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 map("n", "\\", ":Telescope live_grep<CR>", opt)
 map("n", "<leader>t", ":Telescope buffers<CR>", opt)
 map("n", "<Space>o", ":Telescope lsp_document_symbols<CR>", opt)
