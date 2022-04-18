@@ -71,28 +71,16 @@ map("n", "<Space>o", ":Telescope lsp_document_symbols<CR>", opt)
 local pluginKeys = {}
 
 -- 代码注释插件
-pluginKeys.comment = {
-  -- normal 模式
-  toggler = {
-    line = '<C-_>',
-  },
-  -- visual 模式
-  opleader = {
-    -- ctrl + /
-    line = '<leader>ci',
-    block = '<leader>cb',
-  },
-  ---LHS of extra mappings
-  ---@type table
-  extra = {
-    ---Add comment on the line above
-    above = '<leader>cO',
-    ---Add comment on the line below
-    below = '<leader>co',
-    ---Add comment at the end of line
-    eol = '<leader>cA',
-  },
-}
+vim.g.kommentary_create_default_mappings = false
+vim.api.nvim_set_keymap("n", "<leader>cic", "<Plug>kommentary_line_increase", {})
+vim.api.nvim_set_keymap("n", "<leader>ci", "<Plug>kommentary_motion_increase", {})
+vim.api.nvim_set_keymap("x", "<leader>ci", "<Plug>kommentary_visual_increase", {})
+vim.api.nvim_set_keymap("n", "<leader>cdc", "<Plug>kommentary_line_decrease", {})
+vim.api.nvim_set_keymap("n", "<leader>cd", "<Plug>kommentary_motion_decrease", {})
+vim.api.nvim_set_keymap("x", "<leader>cd", "<Plug>kommentary_visual_decrease", {})
+vim.api.nvim_set_keymap("n", "<leader>cc", "<Plug>kommentary_line_default", {})
+vim.api.nvim_set_keymap("n", "<leader>c", "<Plug>kommentary_motion_default", {})
+vim.api.nvim_set_keymap("x", "<leader>c", "<Plug>kommentary_visual_default", {})
 
 
 -- hop key 

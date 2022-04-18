@@ -1,1 +1,1 @@
-require('Comment').setup(require('keybinding').comment)
+require('kommentary.config').use_extended_mappings()
