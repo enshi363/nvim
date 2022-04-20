@@ -11,7 +11,7 @@ cmp.setup({
         end,
     },
     completion = {
-        keyword_length = 3
+        -- keyword_length = 3
     },
     mapping = require('keybinding').cmp(cmp), 
     sources = cmp.config.sources({
