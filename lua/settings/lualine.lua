@@ -9,6 +9,7 @@ require('lualine').setup {
         component_separators = "|",
         section_separators = { left = '', right = '' },
         disabled_filetypes = {},
+        globalstatus = true,
         -- always_divide_middle = true,
     },
     sections = {
