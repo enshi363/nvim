@@ -79,9 +79,9 @@ nvim_lsp.intelephense.setup{
   on_attach = function(_, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
     require('keybinding').maplsp(buf_set_keymap)
-    -- vim.api.nvim_exec([[
-    -- autocmd BufWritePre *.php lua vim.lsp.buf.formatting_sync(nil,1000)
-    -- ]],false)
+    vim.api.nvim_exec([[
+    autocmd BufWritePre *.php lua vim.lsp.buf.formatting_sync(nil,1000)
+    ]],false)
   end,
   capabilities = capabilities,
   settings = {
