@@ -18,7 +18,7 @@ require("toggleterm").setup{
     insert_mappings = true, -- whether or not the open mapping applies in insert mode
     terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
     persist_size = true,
-    direction = 'float',
+    direction = 'horizontal',
     close_on_exit = true, -- close the terminal window when the process exits
     shell = 'fish', -- change the default shell
     -- This field is only relevant if direction is set to 'float'
@@ -43,6 +43,7 @@ local Terminal  = require('toggleterm.terminal').Terminal
 local lazygit = Terminal:new({ 
   cmd = "lazygit", 
   hidden = true,
+  direction = 'float',
   float_opts = {
     width = 200,
     height = 90,

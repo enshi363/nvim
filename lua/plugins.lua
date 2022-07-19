@@ -55,7 +55,7 @@ return require('packer').startup(function(use)
       },
       -- tag = 'release' -- To use the latest release
   }
-  use {"akinsho/toggleterm.nvim"}
+  use {"akinsho/toggleterm.nvim" ,tag = 'v2.*'}
 
   use { "folke/which-key.nvim"}
   -- hop like vim-sneak
@@ -91,7 +91,9 @@ return require('packer').startup(function(use)
 
   --------------------------- colorscheme ------------------------------------
 
-  use 'shaunsingh/nord.nvim'
+  -- use 'shaunsingh/nord.nvim'
+  --use 'flazz/vim-colorschemes'
+  use 'projekt0n/github-nvim-theme' 
 
   -- telescope
   use {

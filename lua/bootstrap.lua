@@ -30,4 +30,10 @@ require('settings/whichkey')
 
 require('settings/hop')
 
-require('nord').set()
+--require('nord').set()
+require('github-theme').setup({
+  theme_style = "dimmed",
+  dark_sidebar = true,
+  sidebars = {"qf", "vista_kind", "terminal", "packer"},
+  comment_style = "italic",
+})
