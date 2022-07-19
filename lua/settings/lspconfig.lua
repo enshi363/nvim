@@ -153,7 +153,8 @@ nvim_lsp.intelephense.setup{
         "xsl",
         "Zend OPcache",
         "zip",
-        "zlib"
+        "zlib",
+        "phalcon"
       },
       files = {
         maxSize = 5000000;
