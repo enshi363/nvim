@@ -42,7 +42,8 @@ return require('packer').startup(function(use)
   }
 
   -- Comment
-  use 'b3nj5m1n/kommentary'
+  -- use 'b3nj5m1n/kommentary'
+  use 'numToStr/Comment.nvim'
 
   -- nvim-autopairs
   use 'windwp/nvim-autopairs'

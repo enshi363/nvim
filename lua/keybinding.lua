@@ -71,8 +71,8 @@ map("n", "<Space>o", ":Telescope lsp_document_symbols<CR>", opt)
 local pluginKeys = {}
 
 -- 代码注释插件
-vim.g.kommentary_create_default_mappings = false
-vim.api.nvim_set_keymap("n", "<leader>cic", "<Plug>kommentary_line_increase", {})
+--vim.g.kommentary_create_default_mappings = false 
+--[[ vim.api.nvim_set_keymap("n", "<leader>cic", "<Plug>kommentary_line_increase", {})
 vim.api.nvim_set_keymap("n", "<leader>ci", "<Plug>kommentary_motion_increase", {})
 vim.api.nvim_set_keymap("x", "<leader>ci", "<Plug>kommentary_visual_increase", {})
 vim.api.nvim_set_keymap("n", "<leader>cdc", "<Plug>kommentary_line_decrease", {})
@@ -81,7 +81,7 @@ vim.api.nvim_set_keymap("x", "<leader>cd", "<Plug>kommentary_visual_decrease", {
 vim.api.nvim_set_keymap("n", "<leader>cc", "<Plug>kommentary_line_default", {})
 vim.api.nvim_set_keymap("n", "<leader>c", "<Plug>kommentary_motion_default", {})
 vim.api.nvim_set_keymap("x", "<leader>c", "<Plug>kommentary_visual_default", {})
-
+ ]]
 
 -- hop key 
 vim.api.nvim_set_keymap('n', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = false})<cr>", {})
