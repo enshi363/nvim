@@ -85,4 +85,4 @@ vim.o.wildmenu = true
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.pumheight = 10
 -- always show tabline
-vim.o.showtabline = 0 
+-- vim.o.showtabline = 0 
