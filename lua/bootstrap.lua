@@ -22,7 +22,7 @@ require('settings/git')
 
 require('settings/toggleterm')
 
--- require('settings/null')
+require('settings/null')
 
 require('nvim-autopairs').setup{}
 
@@ -31,9 +31,10 @@ require('settings/whichkey')
 require('settings/hop')
 
 --require('nord').set()
-require('github-theme').setup({
-  theme_style = "dimmed",
-  dark_sidebar = true,
-  sidebars = {"qf", "vista_kind", "terminal", "packer"},
-  comment_style = "italic",
-})
+-- require('github-theme').setup({
+--   theme_style = "dimmed",
+--   dark_sidebar = true,
+--   sidebars = {"qf", "vista_kind", "terminal", "packer"},
+--   comment_style = "italic",
+-- })
+

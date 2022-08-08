@@ -154,6 +154,7 @@ nvim_lsp.intelephense.setup{
         "Zend OPcache",
         "zip",
         "zlib",
+        "mongodb",
         "phalcon"
       },
       files = {

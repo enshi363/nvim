@@ -30,6 +30,8 @@ let g:enable_bold_font = 1
 
 set background=dark
 
+colorscheme onedark
+
 "hi CursorLine term=bold cterm=bold ctermbg=8
 
 set t_Co=256
