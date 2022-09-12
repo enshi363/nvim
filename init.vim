@@ -32,6 +32,10 @@ set background=dark
 
 colorscheme onedark
 
+highlight Normal ctermbg=none
+
+hi Visual term=bold cterm=bold ctermbg=26
+
 "hi CursorLine term=bold cterm=bold ctermbg=8
 
 set t_Co=256
