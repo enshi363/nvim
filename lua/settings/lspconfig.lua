@@ -28,7 +28,7 @@ nvim_lsp.gopls.setup({
         --buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
         require('keybinding').maplsp(buf_set_keymap)
         vim.api.nvim_exec([[
-        autocmd BufWritePre *.go lua vim.lsp.buf.formatting_sync(nil,1000)
+        autocmd BufWritePre *.go lua vim.lsp.buf.format()
         ]],false)
     end,
     capabilities = capabilities,
@@ -80,7 +80,7 @@ nvim_lsp.intelephense.setup{
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
     require('keybinding').maplsp(buf_set_keymap)
     vim.api.nvim_exec([[
-    autocmd BufWritePre *.php lua vim.lsp.buf.formatting_sync(nil,1000)
+    autocmd BufWritePre *.php lua vim.lsp.buf.format()
     ]],false)
   end,
   capabilities = capabilities,
