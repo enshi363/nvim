@@ -30,7 +30,7 @@ let g:enable_bold_font = 1
 
 set background=dark
 
-colorscheme onedark
+colorscheme nord 
 
 highlight Normal ctermbg=none
 
