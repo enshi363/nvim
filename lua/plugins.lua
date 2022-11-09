@@ -93,10 +93,10 @@ return require('packer').startup(function(use)
 
   --------------------------- colorscheme ------------------------------------
 
-  -- use 'shaunsingh/nord.nvim'
+  use 'shaunsingh/nord.nvim'
   -- use 'flazz/vim-colorschemes'
   -- use 'projekt0n/github-nvim-theme' 
-  use 'joshdick/onedark.vim'
+  -- use 'joshdick/onedark.vim'
 
 
   -- telescope
