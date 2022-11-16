@@ -23,6 +23,9 @@ local servers = {
 
 -- golang lsp setting
 nvim_lsp.gopls.setup({
+    cmd = {"gopls", "serve"},
+    filetypes = {"go", "gomod"},
+    root_dir = util.root_pattern("go.work", "go.mod", ".git"),
     on_attach = function(_, bufnr)
         local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
         --local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
@@ -32,7 +35,7 @@ nvim_lsp.gopls.setup({
         autocmd BufWritePre *.go lua vim.lsp.buf.format()
         ]],false)
     end,
-    capabilities = capabilities,
+    --capabilities = capabilities,
     settings = {
         gopls = {
             experimentalPostfixCompletions = true,
