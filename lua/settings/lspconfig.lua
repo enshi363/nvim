@@ -80,6 +80,7 @@ nvim_lsp.tsserver.setup{
 
 -- php lsp setting
 nvim_lsp.intelephense.setup{
+  cmd = { 'intelephense', '--stdio' },
   on_attach = function(_, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
     require('keybinding').maplsp(buf_set_keymap)

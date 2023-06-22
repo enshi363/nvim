@@ -30,12 +30,21 @@ let g:enable_bold_font = 1
 
 set background=dark
 
-colorscheme nord 
+" colorscheme nord 
+let g:sonokai_style = 'maia'
+colorscheme sonokai 
 
-highlight Normal ctermbg=none
+" highlight Normal ctermbg=none
+
+" highlight Normal guibg=None ctermbg=None
+" highlight NonText guibg=None ctermbg=None
 
 "hi Visual term=bold cterm=bold ctermbg=26
 
 "hi CursorLine term=bold cterm=bold ctermbg=8
 
+set termguicolors
+
 set t_Co=256
+
+set clipboard+=unnamedplus

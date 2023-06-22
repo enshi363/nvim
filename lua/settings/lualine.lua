@@ -2,14 +2,14 @@ require('lualine').setup {
     options = {
         icons_enabled = true,
         --theme = 'github_dark',
-        theme = 'nord',
-        component_separators = { left = '', right = ''},
-        section_separators = { left = '', right = ''},
+        theme = 'onedark',
+        -- component_separators = { left = '', right = ''},
+        -- section_separators = { left = '', right = ''},
         -- component_separators = { left = '', right = ''},
         -- section_separators = { left = '', right = '' },
         -- section_separators = { left = '', right = '' },
-        -- component_separators = "|",
-        -- section_separators = { left = '', right = '' },
+        component_separators = { left = '|', right = '|'},
+        section_separators = { left = '', right = '' },
         disabled_filetypes = {},
         globalstatus = true,
         component_separators = '',
@@ -40,10 +40,10 @@ require('lualine').setup {
         lualine_a = {
             {
                 'buffers',
-                buffers_color = {
-                    active = 'lualine_b_normal',     -- Color for active buffer.
-                    inactive = 'lualine_b_inactive', -- Color for inactive buffer.
-                },
+                -- buffers_color = {
+                --     active = 'lualine_b_normal',     -- Color for active buffer.
+                --     inactive = 'lualine_b_inactive', -- Color for inactive buffer.
+                -- },
             }
 
         },

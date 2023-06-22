@@ -63,7 +63,7 @@ return require('packer').startup(function(use)
   -- hop like vim-sneak
   use {
     'phaazon/hop.nvim',
-    branch = 'v1', -- optional but strongly recommended
+    branch = 'v2', -- optional but strongly recommended
   }
 
   use { "aklt/plantuml-syntax" }
@@ -93,7 +93,8 @@ return require('packer').startup(function(use)
 
   --------------------------- colorscheme ------------------------------------
 
-  use 'shaunsingh/nord.nvim'
+  -- use 'shaunsingh/nord.nvim'
+  use 'sainnhe/sonokai'
   -- use 'flazz/vim-colorschemes'
   -- use 'projekt0n/github-nvim-theme' 
   -- use 'joshdick/onedark.vim'
