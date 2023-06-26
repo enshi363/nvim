@@ -5,7 +5,14 @@ require'nvim-treesitter.configs'.setup {
   -- 启用代码高亮功能
   highlight = {
     enable = true,
-    disable = {"json"},
+    -- disable = {"json"},
+    disable = function(lang, buf)
+        local max_filesize = 64 * 1024 -- 64 KB
+        local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
+        if ok and stats and stats.size > max_filesize then
+            return true
+        end
+    end,
     additional_vim_regex_highlighting = false 
   },
   -- 启用增量选择

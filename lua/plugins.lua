@@ -46,6 +46,16 @@ return require('packer').startup(function(use)
   -- use 'b3nj5m1n/kommentary'
   use 'numToStr/Comment.nvim'
 
+  use {
+    "danymat/neogen",
+    config = function()
+        require('neogen').setup {snippet_engine = "luasnip" }
+    end,
+    requires = "nvim-treesitter/nvim-treesitter",
+    -- Uncomment next line if you want to follow only stable versions
+    tag = "*"
+  }
+
   -- nvim-autopairs
   use 'windwp/nvim-autopairs'
 
@@ -90,11 +100,19 @@ return require('packer').startup(function(use)
   -- lspkind
   use 'onsails/lspkind-nvim'
 
+  use({
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	tag = "*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!:).
+	run = "make install_jsregexp"
+  })
 
   --------------------------- colorscheme ------------------------------------
 
   -- use 'shaunsingh/nord.nvim'
-  use 'sainnhe/sonokai'
+  -- use 'sainnhe/sonokai'
+  use 'dracula/vim'
   -- use 'flazz/vim-colorschemes'
   -- use 'projekt0n/github-nvim-theme' 
   -- use 'joshdick/onedark.vim'
