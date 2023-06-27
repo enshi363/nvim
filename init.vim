@@ -31,9 +31,10 @@ let g:enable_bold_font = 1
 set background=dark
 
 " colorscheme nord 
-" let g:sonokai_style = 'maia'
+" let g:sonokai_style = 'atlantis'
 " colorscheme sonokai 
-colorscheme  dracula
+" colorscheme  dracula
+colorscheme onedark
 
 " highlight Normal ctermbg=none
 

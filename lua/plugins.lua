@@ -112,7 +112,9 @@ return require('packer').startup(function(use)
 
   -- use 'shaunsingh/nord.nvim'
   -- use 'sainnhe/sonokai'
-  use 'dracula/vim'
+  use 'navarasu/onedark.nvim'
+
+  -- use 'dracula/vim'
   -- use 'flazz/vim-colorschemes'
   -- use 'projekt0n/github-nvim-theme' 
   -- use 'joshdick/onedark.vim'
