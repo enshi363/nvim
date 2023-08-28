@@ -84,7 +84,7 @@ return require('packer').startup(function(use)
 
   -- lspconfig
   use {'neovim/nvim-lspconfig'}
-  use "jose-elias-alvarez/null-ls.nvim"
+  -- use "jose-elias-alvarez/null-ls.nvim"
   use "jose-elias-alvarez/nvim-lsp-ts-utils"
 
   -- nvim-cmp
@@ -107,17 +107,18 @@ return require('packer').startup(function(use)
 	-- install jsregexp (optional!:).
 	run = "make install_jsregexp"
   })
+  -- 代替null-ls
+  use 'mfussenegger/nvim-lint'
 
   --------------------------- colorscheme ------------------------------------
 
   -- use 'shaunsingh/nord.nvim'
-  -- use 'sainnhe/sonokai'
-  use 'navarasu/onedark.nvim'
+  use 'sainnhe/sonokai'
+  -- use 'navarasu/onedark.nvim'
 
   -- use 'dracula/vim'
   -- use 'flazz/vim-colorschemes'
   -- use 'projekt0n/github-nvim-theme' 
-  -- use 'joshdick/onedark.vim'
 
 
   -- telescope

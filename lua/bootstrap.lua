@@ -22,7 +22,8 @@ require('settings/git')
 
 require('settings/toggleterm')
 
-require('settings/null')
+-- require('settings/null')
+require('settings/nvim-lint')
 
 require('nvim-autopairs').setup{}
 

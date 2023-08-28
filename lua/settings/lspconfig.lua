@@ -72,6 +72,9 @@ nvim_lsp.tsserver.setup{
         })
         ts_utils.setup_client(client)
     end,
+    cmd = {"typescript-language-server", "--stdio"},
+    filetypes = {"javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx"},
+    root_dir = util.root_pattern("package.json"),
     -- root_dir = util.root_pattern("tsconfig.json" ,"tslint.json", ".git"),
     capabilities = capabilities,
 }
