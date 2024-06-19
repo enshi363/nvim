@@ -21,6 +21,18 @@ local servers = {
     "cssls",
 }
 
+require("nvim-lsp-installer").setup({
+    automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+    ensure_installed = {'gopls','tsserver','intelephense','html','cssls','rust_analyzer','yamlls'},
+    ui = {
+        icons = {
+            server_installed = "✓",
+            server_pending = "➜",
+            server_uninstalled = "✗"
+        }
+    }
+})
+
 -- golang lsp setting
 nvim_lsp.gopls.setup({
     cmd = {"gopls", "serve"},
@@ -172,3 +184,17 @@ nvim_lsp.intelephense.setup{
   }
 }
 
+
+-- rust
+local rt = require("rust-tools")
+
+rt.setup({
+  server = {
+    on_attach = function(_, bufnr)
+      -- -- Hover actions
+      vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+      -- -- Code action groups
+      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+    end,
+  },
+})

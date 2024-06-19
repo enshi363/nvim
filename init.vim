@@ -32,18 +32,22 @@ set background=dark
 
 " colorscheme nord 
 let g:sonokai_style = 'maia'
+let g:sonokai_better_performance = 1
+let g:sonokai_transparent_background=1
 colorscheme sonokai 
+
 " colorscheme  dracula
 " colorscheme onedark
 
-" highlight Normal ctermbg=none
+ " highlight Normal ctermbg=none
 
+" highlight Normal guibg=None ctermbg=None
 " highlight Normal guibg=None ctermbg=None
 " highlight NonText guibg=None ctermbg=None
 
 "hi Visual term=bold cterm=bold ctermbg=26
 
-"hi CursorLine term=bold cterm=bold ctermbg=8
+"hi CursorLine term=bold cterm=bold ctermbg=9
 
 set termguicolors
 

@@ -83,7 +83,10 @@ return require('packer').startup(function(use)
   -------------------------- lsp -------------------------------------------
 
   -- lspconfig
-  use {'neovim/nvim-lspconfig'}
+  use {
+    "williamboman/nvim-lsp-installer",
+    "neovim/nvim-lspconfig",
+  }
   -- use "jose-elias-alvarez/null-ls.nvim"
   use "jose-elias-alvarez/nvim-lsp-ts-utils"
 
@@ -110,6 +113,9 @@ return require('packer').startup(function(use)
   -- 代替null-ls
   use 'mfussenegger/nvim-lint'
 
+  -- rust
+  use 'simrat39/rust-tools.nvim'
+
   --------------------------- colorscheme ------------------------------------
 
   -- use 'shaunsingh/nord.nvim'
@@ -120,6 +126,9 @@ return require('packer').startup(function(use)
   -- use 'flazz/vim-colorschemes'
   -- use 'projekt0n/github-nvim-theme' 
 
+  ------------------------ coc.nvim -----------------------------------------
+  
+  -- use {'neoclide/coc.nvim', branch = 'release'}
 
   -- telescope
   use {
