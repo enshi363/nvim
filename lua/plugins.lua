@@ -25,6 +25,7 @@ end
 return require('packer').startup(function(use)
   -------------------------- plugins -------------------------------------------
 
+  use {'echasnovski/mini.nvim',version="*"}   
   -- nvim-tree
   use {
     'kyazdani42/nvim-tree.lua',
@@ -65,7 +66,7 @@ return require('packer').startup(function(use)
       requires = {
           'nvim-lua/plenary.nvim'
       },
-      -- tag = 'release' -- To use the latest release
+      tag = 'release' -- To use the latest release
   }
   use {"akinsho/toggleterm.nvim" ,tag = 'v2.*'}
 
@@ -128,7 +129,7 @@ return require('packer').startup(function(use)
 
   ------------------------ coc.nvim -----------------------------------------
   
-  -- use {'neoclide/coc.nvim', branch = 'release'}
+  use {'neoclide/coc.nvim', branch = 'release'}
 
   -- telescope
   use {
