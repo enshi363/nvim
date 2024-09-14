@@ -23,7 +23,7 @@ local servers = {
 
 require("nvim-lsp-installer").setup({
     automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
-    ensure_installed = {'gopls','tsserver','intelephense','html','cssls','rust_analyzer','yamlls'},
+    ensure_installed = {'gopls','ts_ls','intelephense','html','cssls','rust_analyzer','yamlls'},
     ui = {
         icons = {
             server_installed = "✓",
@@ -71,7 +71,7 @@ nvim_lsp.gopls.setup({
 --     root_dir = util.root_pattern("angular.json", ".git",".angular-cli.json")
 -- }
 
-nvim_lsp.tsserver.setup{
+nvim_lsp.ts_ls.setup{
     init_options = require("nvim-lsp-ts-utils").init_options,
     on_attach = function(client, bufnr)
         local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
