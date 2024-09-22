@@ -120,16 +120,16 @@ return require('packer').startup(function(use)
   --------------------------- colorscheme ------------------------------------
 
   -- use 'shaunsingh/nord.nvim'
-  use 'sainnhe/sonokai'
+  -- use 'sainnhe/sonokai'
   -- use 'navarasu/onedark.nvim'
 
-  -- use 'dracula/vim'
+  use 'dracula/vim'
   -- use 'flazz/vim-colorschemes'
   -- use 'projekt0n/github-nvim-theme' 
 
   ------------------------ coc.nvim -----------------------------------------
   
-  use {'neoclide/coc.nvim', branch = 'release'}
+  -- use {'neoclide/coc.nvim', branch = 'release'}
 
   -- telescope
   use {
